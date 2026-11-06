@@ -1,0 +1,79 @@
+{
+   "nav":{
+    "button":"Shiko oraret e namazit",
+    "navigation1":"Kurani i përditshëm",
+    "navigation2":"Dua-të e përditshme",
+    "navigation3":"Tesbih digjital",
+    "navigation4":"99 Emrat e Allahut",
+   "nav1description": "Lexo një ajet të shkurtër dhe gjej një moment për të reflektuar mbi kuptimin e tij.",
+  "nav2description": "Gjej një dua domethënëse për çastet dhe nevojat e përditshme.",
+  "nav3description": "Mbaj shënim dhikrin tënd me një tespih dixhital të thjeshtë.",
+  "nav4description": "Zbuloj emrat e bukur të Allahut dhe kuptimet e tyre.",
+    
+   "smallInformation1":{
+        "title1":"Ajeti i Ditës",
+        "description1":"Reflektime ditore të zgjedhura",
+        "title2":"Indeksi i Xhuzave",
+        "description2":"Qasje e shpejtë në të 30 xhuzat",
+        "title3":"Lexim me Zë (Audio)",
+        "description3":"Dëgjo zëra qetësues",
+        "title4":"Faqeruajtësit & Shënimet",
+        "description4":"Ruaj ajetet e tua të preferuara"
+    },
+     "smallInformation2": {
+        "title1": "Mëngjes & Mbrëmje",
+        "description1": "Adhkar për mbrojtje",
+        "title2": "Falja (Istigfar)",
+        "description2": "Duas për të kërkuar mëshirë",
+        "title3": "Vështirësi & Durim",
+        "description3": "Rehati në kohë të vështira",
+        "title4": "Duat Rabbana",
+        "description4": "Lutje klasike kuranore"
+    },
+    "smallInformation3": {
+        "title1": "Subhanallah",
+        "description1": "Lavdi i qoftë Allahut",
+        "title2": "Elhamdulilah",
+        "description2": "Falënderimi i takon Allahut",
+        "title3": "Allahu Ekber",
+        "description3": "Allahut është Më i Madhi",
+        "title4": "Numërues i Personalizuar",
+        "description4": "Vendosni objektivat tuaja për dhikr"
+    },
+    "smallInformation4": {
+        "title1": "Më i Mëshirshmi",
+        "title2": "Më i Mëshirshmi (Mëshirëbërësi)",
+        "title3": "Burimi i Paqes",
+        "title4": "Katalogu i Plotë",
+        "description4": "Eksploroni të 99 emrat e bukur"
+    },
+    "exploreButton": "Eksploro seksionin"
+},
+    "hero": {
+        "subtitle": "Një përvojë moderne islame",
+        "title": "Ndriço",
+        "highlight": "Rrugën Tënde",
+        "description": "Një përvojë moderne islame e ndërtuar për të forcuar besimin, dijen dhe adhurimin e përditshëm. Nur sjell bazat e jetës myslimane në një hapësirë të qetë dhe të përqendruar."
+    },
+    "prayer":{
+    "current": "Koha aktuale",
+    "warning": "Ju lutemi merrni parasysh se koha e namazit mund të ketë një ndryshim prej -5 ose +5 minutash",
+    "upcoming": "Namazi i radhës",
+    "today": "Sot",
+    "tomorrow": "Nesër",
+    "start": "Fillon pas",
+    "times": {
+        "fajr": "Sabahu",
+        "sunrise": "Lindja e diellit",
+        "dhuhr": "Dreka",
+        "asr": "Ikindi",
+        "maghrib": "Akshami",
+        "isha": "Jacia"
+    }
+    },
+    "tasbih":{
+    "title": "Tasbihi Dixhital",
+    "description": "Mbani gjurmët e dhikrit tuaj me një tasbih të thjeshtë dixhital, klikoni në rreth, thoni dhikrin 33 herë dhe tasbihi do ta regjistrojë automatikisht për ju",
+    "Instruction": "Kliko & thuaj"
+    }
+}

@@ -1,0 +1,81 @@
+{
+   "nav":{
+    "button":"Gebetszeiten ansehen",
+    "navigation1":"Der tägliche Koran",
+    "navigation2":"Tägliche Bittgebete (Duas)",
+    "navigation3":"Digitale Zähler",
+    "navigation4":"99 Namen Gottes",
+    
+  "nav1description": "Lies einen kurzen Vers (Ayah) und nimm dir einen Moment Zeit, um über seine Bedeutung nachzudenken.",
+  "nav2description": "Finde ein bedeutungsvolles Dua für alltägliche Momente und Bedürfnisse.",
+  "nav3description": "Behalte den Überblick über deinen Dhikr mit einem einfachen digitalen Tasbih.",
+  "nav4description": "Entdecke die wunderschönen Namen Allahs und ihre Bedeutungen.",
+
+    "smallInformation1":{
+        "title1":"Vers des Tages",
+        "description1":"Handverlesene tägliche Reflexionen",
+        "title2":"Juz-Index",
+        "description2":"Schneller Zugriff auf alle 30 Juz",
+        "title3":"Audio-Rezitation",
+        "description3":"Höre beruhigenden Stimmen zu",
+        "title4":"Lesezeichen & Notizen",
+        "description4":"Speichere deine Lieblings-Ayahs"
+    },
+    "smallInformation2": {
+        "title1": "Morgen & Abend",
+        "description1": "Adhkar zum Schutz",
+        "title2": "Vergebung (Istighfar)",
+        "description2": "Duas um Barmherzigkeit",
+        "title3": "Schwierigkeiten & Geduld",
+        "description3": "Trost in schwierigen Zeiten",
+        "title4": "Rabbana Duas",
+        "description4": "Klassische koranische Bittgebete"
+    },
+    "smallInformation3": {
+        "title1": "Subhanallah",
+        "description1": "Preis sei Allah",
+        "title2": "Alhamdulillah",
+        "description2": "Lob gebührt Allah",
+        "title3": "Allahu Akbar",
+        "description3": "Allah ist der Grösste",
+        "title4": "Benutzerdefinierter Zähler",
+        "description4": "Lege deine eigenen Dhikr-Ziele fest"
+    },
+    "smallInformation4": {
+        "title1": "Der Allerbarmende",
+        "title2": "Der Barmherzige",
+        "title3": "Die Quelle des Friedens",
+        "title4": "Vollständiges Verzeichnis",
+        "description4": "Entdecke alle 99 schönen Namen"
+    },
+    "exploreButton": "Bereich erkunden"
+   },
+    "hero": {
+        "subtitle": "Ein modernes islamisches Erlebnis",
+        "title": "Erleuchte",
+        "highlight": "Deinen Weg",
+        "description": "Ein modernes islamisches Erlebnis, entwickelt um Glauben, Wissen und die tägliche Anbetung zu stärken. Nur bringt das Wesentliche des muslimischen Lebens in einen ruhigen, fokussierten Raum."
+    },
+    "prayer":{
+      "current": "Aktuelle Zeit",
+    "warning": "Bitte beachten Sie, dass die Gebetszeit um -5 oder +5 Minuten abweichen kann",
+    "upcoming": "Kommendes Gebet",
+    "today": "Heute",
+    "tomorrow": "Morgen",
+    "start": "Beginnt in",
+    "times": {
+        "fajr": "Fajr",
+        "sunrise": "Sonnenaufgang",
+        "dhuhr": "Dhuhr",
+        "asr": "Asr",
+        "maghrib": "Maghrib",
+        "isha": "Isha"
+    }
+    },
+    "tasbih":{
+    "title": "Digitaler Tasbih",
+    "description": "Behalte den Überblick über deinen Dhikr mit einem einfachen digitalen Tasbih. Klicke auf den Kreis, sprich den Dhikr 33 Mal, und der Tasbih zählt automatisch für dich mit",
+    "Instruction": "Klicken & sprechen"
+    }
+    
+}

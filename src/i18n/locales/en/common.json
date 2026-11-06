@@ -1,0 +1,82 @@
+{
+   "nav":{
+    "button":"View prayer times",
+    "navigation1":"Daily Quran",
+    "navigation2":"Daily Duas",
+    "navigation3":"Digital Tasbih",
+    "navigation4":"99 Names of Allah",
+    "nav1description":"Read a short ayah and take a moment to reflect on its meaning.",
+    "nav2description":"Find a meaningful dua for everyday moments and needs.",
+    "nav3description":"Keep track of your dhikr with a simple digital tasbih.",
+    "nav4description":"Discover the beautiful names of Allah and their meanings.",
+    "smallInformation1":{
+        "title1":"Verse of the Day",
+        "description1":"Handpicked daily reflections",
+        "title2":"Juz Index",
+        "description2":"Quick access to all 30 Juz",
+        "title3":"Audio Recitation",
+        "description3":"Listen to soothing voices",
+        "title4":"Bookmark Notes",
+        "description4":"Save your favorite ayahs"
+    },
+    "smallInformation2":{
+        "title1":"Morning & Evening",
+        "description1":"Adhkar for protection",
+        "title2":"Forgiveness(Istighfar)",
+        "description2":"Duas for seeking mercy",
+        "title3":"Hardship & Patience",
+        "description3":"Comfort in difficult times",
+        "title4":"Rabbana Duas",
+        "description4":"Classic Quranic supplications"
+    },
+    "smallInformation3":{
+        "title1":"Subhanallah",
+        "description1":"Glory to Allah",
+        "title2":"Alhamdulillah",
+        "description2":"Praise be to Allah",
+        "title3":"Allahu Akbar",
+        "description3":"Allah is the Greatest",
+        "title4":"Custom Counter",
+        "description4":"Set your own dhikr targets"
+    },
+     "smallInformation4":{
+        "title1":"The Most Gracious",
+       
+        "title2":"The Most Merciful",
+        
+        "title3":"The Source of Peace",
+        
+        "title4":"Complete Directory",
+        "description4":"Explore all 99 beautiful names"
+        
+    },
+    "exploreButton":"Explore section"        
+},
+    "hero":{
+        "subtitle":"A modern Islamic experience",
+        "title":"Illuminate",
+        "highlight":"Your Path",
+        "description":"A modern Islamic experience built to strengthen faith, knowledge, and daily worship. Nur brings the essentials of Muslim life into one calm, focused space."
+    },
+    "prayer":{
+        "current":"Current time",
+        "warning":"Please Consider the difference of prayer time can be between -5 or +5 minutes",
+        "upcoming":"Upcoming prayer",
+        "today":"Today",
+        "tomorrow":"Tomorrow",
+        "start":"Stars in",
+        "times":{
+            "fajr":"Fajr",
+            "sunrise":"Sunrise",
+            "dhuhr":"Dhuhr",
+            "asr":"Asr",
+            "maghrib":"Maghrib",
+            "isha":"Isha"
+        }
+    },
+    "tasbih":{
+        "title":"Digital Tasbih",
+        "description":"Keep track of your dhikr with a simple digital tasbih,click on the circle say the dhikr 33x times,and the tasbih will automatically track for you ",
+        "Instruction":"Click & say"
+    }
+}
