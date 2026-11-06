@@ -1,5 +1,5 @@
-import React, { useState,useEffect, useRef } from 'react';
-import { Moon, Sparkles, BookOpen, Heart, Repeat, Compass, Sun, MoonIcon, MenuIcon, X } from 'lucide-react';
+import { useState,useEffect, useRef } from 'react';
+import { Moon, Sparkles, BookOpen, Heart, Repeat, Sun, MoonIcon, MenuIcon, X } from 'lucide-react';
 import { motion,AnimatePresence } from 'motion/react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
