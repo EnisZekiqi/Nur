@@ -75,5 +75,15 @@
     "title": "Tasbihi Dixhital",
     "description": "Mbani gjurmët e dhikrit tuaj me një tasbih të thjeshtë dixhital, klikoni në rreth, thoni dhikrin 33 herë dhe tasbihi do ta regjistrojë automatikisht për ju",
     "Instruction": "Kliko & thuaj"
+    },
+    "duas": {
+        "title": "Duat",
+        "description": "Kontrolloni duat çdo ditë, çdo ditë do të ketë 10 dua të ndryshme, gjithashtu mund të merrni dua të rastësishme si dhe të kërkoni specifike",
+        "input": "Kërko Dua",
+        "search": "Kërko",
+        "random": "Të rastësishme",
+        "reset": "Rivendos filtrat",
+         "error":"Nuk u gjet asnjë dua",
+        "errorDescription":"Provoni të kërkoni me një fjalë ose frazë tjetër."
     }
 }

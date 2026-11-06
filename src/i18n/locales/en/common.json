@@ -78,5 +78,15 @@
         "title":"Digital Tasbih",
         "description":"Keep track of your dhikr with a simple digital tasbih,click on the circle say the dhikr 33x times,and the tasbih will automatically track for you ",
         "Instruction":"Click & say"
+    },
+    "duas":{
+        "title":"Duas",
+        "description":"Check duas daily , each day will have 10 different duas , you can also have random duas as well searching specific ones",
+        "input":"Search Duas",
+        "search":"Search",
+        "random":"Random",
+        "reset":"Reset Filtering,",
+        "error":"No dua found",
+        "errorDescription":"Try searching with a different word or phrase."
     }
 }

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import type React from "react";
 import { useTranslation } from "react-i18next";
 const Tasbih = () => {
 const dhikrs = ["Subhanallah", "Alhamdulillah", "Allahu Akbar"];

@@ -76,6 +76,16 @@
     "title": "Digitaler Tasbih",
     "description": "Behalte den Überblick über deinen Dhikr mit einem einfachen digitalen Tasbih. Klicke auf den Kreis, sprich den Dhikr 33 Mal, und der Tasbih zählt automatisch für dich mit",
     "Instruction": "Klicken & sprechen"
+    },
+    "duas": {
+        "title": "Duas",
+        "description": "Schaue dir täglich Duas an. Jeder Tag bietet 10 verschiedene Duas, du kannst dir auch zufällige Duas anzeigen lassen oder gezielt danach suchen",
+        "input": "Duas suchen",
+        "search": "Suchen",
+        "random": "Zufällig",
+        "reset": "Filter zurücksetzen",
+         "error":"Kein Dua gefunden",
+        "errorDescription":"Versuche, mit einem anderen Wort oder einer anderen Formulierung zu suchen."
     }
     
 }

@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import type React from "react";
 import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type Names ={
     number: number,
@@ -12,6 +14,7 @@ type Names ={
 
 const Names = () => {
     const [nextPage,setNextPage]=useState(1)
+    const { t } = useTranslation("common");
 
     const {data,isLoading,error}=useQuery({
         queryKey:['names'],
@@ -44,8 +47,8 @@ const Names = () => {
     return ( 
         <section id="names-of-allah" className="px-4 md:px-0 py-20 flex flex-col items-center justify-center gap-4">
         <div className="flex flex-col items-center gap-2">
-            <h1 className="text-4xl font-semibold text-primary-text">99 Names of <em className="text-gold-accent">Allah</em></h1>
-            <p className="text-sm font-normal text-secondary-text tracking-tight text-balance text-center w-full ">Check each name on Arabic & English and the meaning it has</p>
+            <h1 className="text-4xl font-semibold text-primary-text">{t("nav.navigation4")}</h1>
+            <p className="text-sm font-normal text-secondary-text tracking-tight text-balance text-center w-full ">{t("nav.nav4description")}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-4">
     {tenNames.map((name:Names, index:number) => (

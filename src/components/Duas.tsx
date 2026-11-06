@@ -1,7 +1,8 @@
 'use client'
 import { useQuery } from "@tanstack/react-query";
-import { Dices, RadiationIcon, RotateCcw, Search } from "lucide-react";
+import { Dices, RotateCcw, Search } from "lucide-react";
 import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 type Dua = {
     title: string;
@@ -14,7 +15,7 @@ const Duas = () => {
 
     
     const duasPerDay = 6
-
+    const { t } = useTranslation("common");
     
     const [searchTerm, setSearchTerm] = useState("");
     const [pushSearch,setPushSearch]=useState("")
@@ -75,6 +76,7 @@ const dailyDuas = useMemo(() => {
 ////once search button is clicked the search data is shown here 
 
     function submitSearch() {
+        setSelectedCategory("");
         setPushSearch(searchTerm)
     }
 
@@ -152,14 +154,14 @@ const dailyDuas = useMemo(() => {
         <section id="daily-duas" className="flex flex-col relative gap-4 overflow-hidden items-center justify-center px-4 md:px-0 py-20 border-t border-gold-accent/20">
            <div className="flex flex-col md:flex-row items-center justify-between w-full">
             <div className="space-y-2">
-                 <h1 className="text-4xl font-semibold text-primary-text text-start">Duas</h1>
-            <p className="text-sm font-normal tracking-tight text-secondary-text text-balance text-start w-full max-w-2xl">Check duas daily , each day will have 10 different duas , you can also have random duas as well searching specific ones</p>
+                 <h1 className="text-4xl font-semibold text-primary-text text-start">{t("duas.title")}</h1>
+            <p className="text-sm font-normal tracking-tight text-secondary-text text-balance text-start w-full max-w-2xl">{t("duas.description")}</p>
             </div>
             <div className="grid w-full grid-cols-2 items-center gap-2 md:flex md:w-auto md:shrink-0 mt-4 md:mt-0">
-                <input type="text" placeholder="Search Duas" className="col-span-2 w-full min-w-0 text-primary-text text-sm placeholder:text-secondary-text rounded-xl p-2 focus:outline-0 border border-gold-accent/60 focus:border-gold-accent md:col-span-1 md:w-40" value={searchTerm} onChange={(e)=>setSearchTerm(e.target.value)}/>
-                <button onClick={submitSearch} className="flex w-full items-center justify-center gap-1 px-2.5 py-2 rounded-xl text-xs sm:text-sm bg-primary-text text-background cursor-pointer font-medium whitespace-nowrap md:w-auto"><Search size={18}/> Search</button>
-                <button onClick={RandomDua} className="flex w-full items-center justify-center gap-1 px-2.5 py-2 rounded-xl text-xs sm:text-sm bg-gold-accent text-background cursor-pointer font-medium whitespace-nowrap md:w-auto"><Dices size={18}/> Random</button>
-                <button onClick={resetDuas} className="col-span-2 flex w-full items-center justify-center gap-1 px-2.5 py-2 rounded-xl text-xs sm:text-sm bg-secondary-text text-background cursor-pointer font-medium whitespace-nowrap md:col-span-1 md:w-auto"><RotateCcw size={18}/> Reset Filtering</button>
+                <input type="text" placeholder={t("duas.input")} className="col-span-2 w-full min-w-0 text-primary-text text-sm placeholder:text-secondary-text rounded-xl p-2 focus:outline-0 border border-gold-accent/60 focus:border-gold-accent md:col-span-1 md:w-40" value={searchTerm} onChange={(e)=>setSearchTerm(e.target.value)}/>
+                <button onClick={submitSearch} className="flex w-full items-center justify-center gap-1 px-2.5 py-2 rounded-xl text-xs sm:text-sm bg-primary-text text-background cursor-pointer font-medium whitespace-nowrap md:w-auto"><Search size={18}/> {t("duas.search")}</button>
+                <button onClick={RandomDua} className="flex w-full items-center justify-center gap-1 px-2.5 py-2 rounded-xl text-xs sm:text-sm bg-gold-accent text-background cursor-pointer font-medium whitespace-nowrap md:w-auto"><Dices size={18}/> {t("duas.random")}</button>
+                <button onClick={resetDuas} className="col-span-2 flex w-full items-center justify-center gap-1 px-2.5 py-2 rounded-xl text-xs sm:text-sm bg-secondary-text text-background cursor-pointer font-medium whitespace-nowrap md:col-span-1 md:w-auto"><RotateCcw size={18}/> {t("duas.reset")}</button>
             </div>
            </div>
         <div className={`grid ${selectedCategory.trim() !== ''? 'grid-col-1':'grid-cols-1 md:grid-cols-3'} gap-4 mt-4`}>
@@ -179,7 +181,7 @@ const dailyDuas = useMemo(() => {
                     </div>
                 </div>)
             
-            :pushSearch.trim() !== ''? duas.map((dua)=>(
+            :pushSearch.trim() !== ''? (duas.length > 0 ? duas.map((dua)=>(
                 <div className="group flex flex-col gap-4 justify-between border border-gold-accent/20 bg-cards/40 hover:bg-cards/80 hover:border-gold-accent/60 p-4 rounded-2xl transition-all duration-300 shadow-sm">
                     <div className="flex items-center justify-between">
                         <h2 className="text-xl font-semibold text-primary-text">{dua.title}</h2>
@@ -193,7 +195,17 @@ const dailyDuas = useMemo(() => {
                         <em className="text-gold-accent font-medium text-xs">{dua.reference}</em>
                     </div>
                 </div>
-            )) : (dailyDuas.map((dua)=>(
+            )) : 
+                <div className="col-span-full flex flex-col items-center justify-center rounded-2xl border border-gold-accent/20 bg-cards/30 px-6 py-12 text-center">
+                <Search size={28} className="mb-3 text-gold-accent" />
+                <h2 className="text-lg font-semibold text-primary-text">
+                {t("duas.error")}
+                </h2>
+                <p className="mt-1 text-sm text-secondary-text">
+                {t("duas.errorDescription")}
+                </p>
+            </div>
+                ) : (dailyDuas.map((dua)=>(
                 <div className="group relative flex flex-col justify-between border border-gold-accent/20 bg-cards/40 hover:bg-cards/80 hover:border-gold-accent/60 p-5 rounded-2xl transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md hover:shadow-gold-accent/5 backdrop-blur-sm">
     
                 {/* Top Row: Title & Category Badge */}
